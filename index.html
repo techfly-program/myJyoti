@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Verify Yourself</title>
+  <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #333333;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #ff6666;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #696969;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0,0.4); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #333333;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+
+</head>
+<body>
+	<h2 translate="center" style="transform: 213">Hello my world! First verify yourself for move further</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Yha pr click kijiye please</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/#" method="" class="form">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Apka name</b></label>
+      <input type="password" placeholder="Apka naam likhiye" name="userid" required>
+
+      <label for="psw"><b>Secret code</b></label>
+      <input type="password" placeholder="secret password bhi likhiye" name="pswrd" required>
+        
+      <button type="submit" onclick="check(this.form)"> Ab verify kariye</button>
+      
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick=""check(this.form)" class="cancelbtn">Cancel</button>
+      
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<script type="text/javascript">
+	function check(form) { /*function to check userid & password*/
+            /*the following code checkes whether the entered userid and password are matching*/
+            if(form.userid.value == "Jyoti@Jiten" && form.pswrd.value == "LoveU2") {
+               //window.open('index1snxskskwskwalqwertledklw.html','_top')/*opens the target page while Id & password matches*/
+                window.open("index1snxskskwskwalqwertledklw.html")
+                
+
+                  
+            }
+            else {
+                alert("Shayad ye aapke liye nahi hai.Agar aap sahi person ho to shabit kro")/*displays error message*/
+            }
+        }
+</script>
+
+
+<!-- partial:index.partial.html -->
+<!--<form method="post">
+<p>Account: <input type="text" name="account" value=""></p>
+<p>Password: <input type="text" name="pw" value=""></p>
+<!-- password is umsi -->
+<!--<p><input type="submit" value="Log In">
+<a href="app.php">Cancel</a></p>
+</form>-->
+<div class="starfield">
+  <div class="static"></div>
+  <div class="moving-1"></div>
+  <div class="moving-2"></div>
+  <div class="moving-3"></div>
+</div>
+<div class="word" style="top:3.019999999999996vh;animation-delay:0.754999999999999s;">Hello world!</div>
+<div class="word" style="top:9.067999999999998vh;animation-delay:2.2669999999999995s;">Everything is</div>
+<div class="word" style="top:12.447999999999993vh;animation-delay:3.1119999999999983s;">a</div>
+<div class="word" style="top:21.732vh;animation-delay:5.433s;">purpose</div>
+<div class="word" style="top:24.096000000000004vh;animation-delay:6.024000000000001s;">even</div>
+<div class="word" style="top:27.548000000000002vh;animation-delay:6.8870000000000005s;">this....</div>
+<div class="word" style="top:30.195999999999998vh;animation-delay:7.5489999999999995s;">"Jo na kisi</div>
+<div class="word" style="top:37.54400000000001vh;animation-delay:9.386000000000003s;">haad ko samajhe,</div>
+<div class="word" style="top:43.988vh;animation-delay:10.997s;">Na usai pahchane,</div>
+<div class="word" style="top:46.75999999999999vh;animation-delay:11.689999999999998s;">usai</div>
+<div class="word" style="top:50.18799999999999vh;animation-delay:12.546999999999997s;">Junun kahate hai.</div>
+<div class="word" style="top:58.512vh;animation-delay:14.628s;">Jo har jagah ho,</div>
+<div class="word" style="top:60.912000000000006vh;animation-delay:15.228000000000002s;">Aur </div>
+<div class="word" style="top:63.816vh;animation-delay:15.954s;">kahi na dikhe,</div>
+<div class="word" style="top:76.00399999999999vh;animation-delay:19.000999999999998s;">usai</div>
+<div class="word" style="top:81.00399999999999vh;animation-delay:20.250999999999998s;">Junun kahate hai</div>
+<div class="word" style="top:84.28800000000001vh;animation-delay:21.072000000000003s;">.................</div>
+
+<!-- partial -->
+
+
+  
+</body>
+</html>
